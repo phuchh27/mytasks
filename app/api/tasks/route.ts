@@ -36,7 +36,7 @@ export async function POST(req: Request) {
         userId,
       },
     });
-    console.log('TASK CREATED: ', task)
+    console.log("TASK CREATED: ", task);
     return NextResponse.json(task);
   } catch (error) {
     console.log("ERROR CREATING TASK: ", error);
@@ -57,7 +57,7 @@ export async function GET(req: Request) {
         userId,
       },
     });
-
+    console.log("TASKS: ", tasks);
     return NextResponse.json(tasks);
   } catch (error) {
     console.log("ERROR GETTING TASKS: ", error);
